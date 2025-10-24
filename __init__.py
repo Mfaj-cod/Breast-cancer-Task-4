@@ -1,6 +1,8 @@
 from modules.preprocess import load_data, preprocess_df
 from modules.train import train
 from modules.evaluate import load_model, evaluate_model
+import warnings
+warnings.filterwarnings('ignore')
 
 def main(data_path):
     df = load_data(data_path)

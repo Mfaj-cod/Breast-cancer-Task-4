@@ -33,6 +33,7 @@ def evaluate_model(X_test, y_test, model):
 
         txt = (
             f"Model: LogisticRegression\n\n"
+            f"Params: solver='saga', penalty='l2'\n\n"
             f"Precision: {precision:.4f}\n\n"
             f"Recall: {recall:.4f}\n\n"
             f"f1_score: {f1:.4f}\n\n"
